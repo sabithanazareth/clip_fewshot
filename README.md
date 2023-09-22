@@ -29,13 +29,13 @@ directories.
 
 ## Usage
 
--Import the necessary libraries and set up the device (CPU or GPU) for processing.
--Load the CLIP model and define image transformations.
--Prepare your data in the required format using datasets.ImageFolder. Ensure that your dataset is organized into train, test, and validation directories.
--Create data loaders for your datasets.
--Define functions to extract prototypes and classify images based on cosine similarity.
--Evaluate the model on the validation dataset and calculate the accuracy.
--Test the model on the test dataset and calculate the accuracy.
+- Import the necessary libraries and set up the device (CPU or GPU) for processing.
+- Load the CLIP model and define image transformations.
+- Prepare your data in the required format using datasets.ImageFolder. Ensure that your dataset is organized into train, test, and validation directories.
+- Create data loaders for your datasets.
+- Define functions to extract prototypes and classify images based on cosine similarity.
+- Evaluate the model on the validation dataset and calculate the accuracy.
+- Test the model on the test dataset and calculate the accuracy.
 
 ## How to run
 
