@@ -56,7 +56,7 @@ Test = 67.74%
 
 ## Summary of the code and approach:
 
-### Model Loading:
+#### Model Loading:
 
 - The CLIP model ("ViT-B/32") is loaded with a specified device (GPU if available).
 
