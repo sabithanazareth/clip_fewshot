@@ -53,3 +53,45 @@ Test = 67.74%
 ```
 
 ```
+
+## Summary of the code and approach:
+
+### Model Loading:
+
+- The CLIP model ("ViT-B/32") is loaded with a specified device (GPU if available).
+
+#### Dataset Preparation:
+
+- The code assumes the existence of training, testing, and validation directories containing subfolders for different sleeve types, each with image samples.
+
+#### Image transformations suitable for CLIP are defined.
+
+- Datasets and DataLoaders for training, testing, and validation are created using PyTorch's ImageFolder and DataLoader.
+
+#### Prototypes Extraction:
+
+- A function extract_prototypes is defined to extract class prototypes from the training dataset. These prototypes are calculated as the mean of embeddings of a few support images per class.
+- The prototypes are stored in a dictionary, where each class label corresponds to its prototype.
+
+#### Image Classification:
+
+- A function classify_image is defined to classify a single image using the prototypes. It calculates the cosine similarity between the image's embedding and each class prototype and selects the class with the highest similarity as the predicted label.
+
+#### Validation and Testing:
+
+- The classifier is evaluated on the validation and test datasets, and accuracy is calculated.
+- The code prints the validation and test accuracy.
+
+#### Results:
+
+- The code showcases the few-shot learning capability of CLIP, achieving classification accuracy on the "sleevetypes" dataset.
+- The achieved validation and test accuracy results are printed.
+
+## citation
+
+@article{radford2021learning,
+title={Learning Transferable Visual Models From Natural Language Supervision},
+author={Radford, Alec and Narasimhan, Karthik and Rockt{\"a}schel, Tim and et al.},
+journal={arXiv preprint arXiv:2103.00020},
+year={2021}
+}
