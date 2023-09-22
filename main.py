@@ -9,7 +9,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # Load the CLIP model
 clip_model, transform = clip.load("ViT-B/32", device=device)
 
-# Define your data directories
+# Define data directories
 train_dir = "./dataset/sleevetypes/train"
 test_dir = "./dataset/sleevetypes/test"
 val_dir = "./dataset/sleevetypes/val"
@@ -17,6 +17,7 @@ val_dir = "./dataset/sleevetypes/val"
 #visualise the data
 visualise(train_dir)
 
+#Load the data
 train_loader, test_loader, val_loader = get_data_loaders(train_dir, test_dir, val_dir, transform,batch_size=32 )
 
 # Extract prototypes from the training set
