@@ -19,7 +19,7 @@ sleeve type directly from the name of the subfolder in the train, test, and val
 directories.
 
 ## Installation
-
+```
 - https://github.com/openai/CLIP - follow the installation procedure
 - PyTorch: pip install torch.
 - torchvision: pip install torchvision.
@@ -27,6 +27,7 @@ directories.
 - OS: import os
 - random: import random
 - matplotlib: import matplotlib.pyplot
+```
 
 ## Usage
 
@@ -41,9 +42,9 @@ directories.
 ## How to run
 
 ### run module
-
+```
 python main.py
-
+```
 ## Some results
 
 ### Validation and test accuracies
@@ -51,9 +52,6 @@ python main.py
 Validation = 50%
 Test = 67.74%
 
-```
-
-```
 
 ## Summary of the code and approach:
 
