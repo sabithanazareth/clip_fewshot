@@ -5,7 +5,7 @@
 </div>
  
 ## Description   
-This is a simple few shot classifier working on top of features extracted from [CLIP architecture](https://github.com/openai/CLIP). Given training, test and validation set test set is the best performing model. On the other side, we have tested ViT-B/16 and ViT-B/32 CLIP models. The latter provided the best results.
+Explored CLIP Model for the few shot capabilities [CLIP architecture](https://github.com/openai/CLIP). Given training, test and validation set test set is the best performing model. On the other side, we have tested ViT-B/16 and ViT-B/32 CLIP models. The latter provided the best results.
 
 ## Provided dataset
 
