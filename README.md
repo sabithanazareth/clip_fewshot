@@ -20,6 +20,7 @@ directories.
 
 ## Installation
 
+- https://github.com/openai/CLIP - follow the installation procedure
 - PyTorch: pip install torch.
 - torchvision: pip install torchvision.
 - PIL (Python Imaging Library): pip install pillow.
