@@ -41,7 +41,7 @@ directories.
 ```
 python main.py
 ```
-## Some results
+# Results
 
 ### Validation and test accuracies
 
@@ -76,11 +76,6 @@ Test = 67.74%
 
 - The classifier is evaluated on the validation and test datasets, and accuracy is calculated.
 - The code prints the validation and test accuracy.
-
-#### Results:
-
-- The code showcases the few-shot learning capability of CLIP, achieving classification accuracy on the "sleevetypes" dataset.
-- The achieved validation and test accuracy results are printed.
 
 ## citation
 
